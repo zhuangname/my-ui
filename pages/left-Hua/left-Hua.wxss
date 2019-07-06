@@ -1,0 +1,11 @@
+.box{
+  width: 96%;
+  height: 200rpx;
+  background: #fff;
+  border-radius: 15rpx;
+  box-shadow:2px 2px 5px #CFD0D0;
+  margin: auto;
+}
+page{
+  background: #ddd;
+}

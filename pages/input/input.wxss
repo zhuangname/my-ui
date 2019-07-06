@@ -1,0 +1,30 @@
+page{
+  background: #f1f1f1;
+}
+
+.input-box{
+  position: relative;
+  background: #fff;
+  padding: 60rpx 0rpx 60rpx 20rpx;
+  font-size: 32rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #f1f1f1;
+}
+
+.input-box label{
+  color: #666;
+  position: absolute;
+  font-size: 32rpx;
+  transition: all .3s;
+}
+
+.input-box input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  padding-left: 20rpx;
+}

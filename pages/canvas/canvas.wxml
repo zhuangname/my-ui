@@ -1,0 +1,5 @@
+<!-- canvas.wxml -->
+<image src="{{haibaoimg}}" bindtap='haibaoimg' style='width:80%; display:block; margin:auto; border:1px solid #ddd;' mode='widthFix'></image>
+<view style="position:fixed;top:999999999999999999999rpx;">
+    <canvas class='canvsclass' canvas-id="firstCanvas"></canvas>
+</view>

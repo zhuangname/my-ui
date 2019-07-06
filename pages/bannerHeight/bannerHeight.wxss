@@ -1,0 +1,9 @@
+
+.swiper-box{
+  width: 100%;
+  margin: auto;
+}
+
+.swiper-box .slide-image{
+  width: 100%;
+}

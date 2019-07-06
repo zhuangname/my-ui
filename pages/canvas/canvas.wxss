@@ -1,0 +1,8 @@
+page{
+  height: 100%;
+}
+.canvsclass{
+  width: 380px;
+  height: 710px;
+  background: #fff;
+}

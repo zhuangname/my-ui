@@ -1,0 +1,20 @@
+
+<view class='swiper-box'>
+
+    <swiper wx:if="{{ imgUrls.length !== 0 }}" indicator-dots="true" autoplay="true" circular="true" style='{{bannerHeight}}'>
+
+      <block wx:for="{{imgUrls}}" wx:key="key">
+      
+        <swiper-item>
+
+          <image src="{{item.img}}" bindtap='bannerimgfun' data-index="{{index}}" class="slide-image" 
+          mode="widthFix" /> 
+
+        </swiper-item>
+
+      </block>
+
+    </swiper>
+
+</view>
+

@@ -1,0 +1,12 @@
+{
+  "usingComponents": {},
+
+  "backgroundColor": "#F7F7F7",
+
+  "navigationBarBackgroundColor": "#fff",
+
+  "navigationBarTitleText": "左边菜单栏",
+
+  "navigationBarTextStyle": "black"
+  
+}

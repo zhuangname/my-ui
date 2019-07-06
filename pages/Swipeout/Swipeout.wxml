@@ -1,0 +1,11 @@
+<view class="i-swipeout-demo">
+    <i-swipeout  i-class="i-swipeout-demo-item" bindchange="handlerCloseButton" actions="{{actions}}">
+        <view slot="content">
+            <i-cell 
+                i-class="i-cell-padding" 
+                title="猛虫过江" 
+                label="侏罗纪世界主题公园及豪华度假村被失控的恐龙们摧毁已有四年">
+            </i-cell>
+        </view>
+    </i-swipeout>
+</view>

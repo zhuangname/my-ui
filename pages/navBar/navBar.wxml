@@ -1,0 +1,13 @@
+<view class='nav'>
+  <block wx:for='{{navList}}' wx:key='{{index}}'>
+    <view class='{{item.Style}} nav-item every' catchtap='navtap' id='{{index}}'>{{item.name}}</view>
+  </block>
+  <view class='navborder' style='left:{{left}}'></view>
+</view>
+<swiper bindchange="swiperChange" current="{{current}}" style='height:{{swiperheight}}rpx;'>
+  <swiper-item>1</swiper-item>
+  <swiper-item>2</swiper-item>
+  <swiper-item>3</swiper-item>
+  <swiper-item>4</swiper-item>
+  <swiper-item>5</swiper-item>
+</swiper>
