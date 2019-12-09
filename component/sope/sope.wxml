@@ -1,0 +1,27 @@
+<view class="mask {{maskActive}}" catchtouchmove="stopPageScroll" >
+
+  <view class="mask-box" style="{{toggle}}">
+
+    <view class="mask-01">
+    
+      <view class="wechat">微信授权</view>
+
+      <view>获取权限</view>
+
+      <view>● 保存图片或视频到你的相册</view>
+
+      <image src="/images/sope.png" class="sope" mode="widthFix"></image>
+
+    </view>
+
+    <view class="mask-btn-box">
+    
+      <view catchtap="configqx" data-scopeWritePhotosAlbum="{{!scopeWritePhotosAlbum}}">取消</view>
+
+      <button open-type="openSetting" catchtap="configqx" class="settingClass">去设置页</button>
+    
+    </view>
+
+  </view>
+
+</view>

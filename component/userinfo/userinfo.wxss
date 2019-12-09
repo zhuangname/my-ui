@@ -1,0 +1,109 @@
+
+.mask{
+  background: rgba(0, 0, 0, .5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  transition: all .60s;
+  opacity: 0;
+  z-index: -99;
+}
+
+.maskActive{
+  z-index: 99;
+  opacity: 1;
+}
+
+.mask .mask-box{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  transition: all .60s;
+  bottom: -100%;
+}
+
+.mask .mask-01{
+  background: #fff;
+  padding: 30rpx 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 34rpx;
+  color: #333;
+  width: 100%;
+  border-radius: 16rpx 16rpx 0 0;
+  position: absolute;
+  bottom: 200rpx;
+}
+
+.mask .mask-01 view:nth-child(1){
+  padding: 20rpx 40rpx;
+  color: #4BC065;
+  font-weight: 600;
+  font-size: 36rpx;
+}
+
+.mask .mask-01 view:nth-child(2){
+  padding: 10rpx 40rpx;
+  font-size: 30rpx;
+}
+
+.mask .mask-01 view:nth-child(3){
+  font-size: 28rpx;
+  color: #ACACAC;
+  padding: 30rpx 40rpx;
+  width: 60%;
+}
+
+.mask .mask-01 .sope{
+  position: absolute;
+  right: 100rpx;
+  width: 120rpx;
+}
+
+.mask .mask-btn-box{
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  height: 200rpx;
+}
+
+.mask .mask-btn-box view{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4BC065 !important;
+  background: #EDEDED !important;
+}
+
+.mask .mask-btn-box view,.mask .mask-btn-box .settingClass{
+  width: 40%;
+  text-align: center;
+  font-size: 32rpx;
+  font-weight: 500;
+  padding: 20rpx 0;
+  margin: 0;
+  background: #fff;
+  position: sticky;
+  color: #fff;
+  background: #4BC065;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  border-radius: 10rpx;
+}
+
+button::after{
+  content: "";
+  border: none;
+}

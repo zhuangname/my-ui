@@ -10,4 +10,7 @@
   <i-cell title="input效果" is-link url="/pages/input/input"></i-cell>
   <i-cell title="轮播图高度自适应" is-link url="/pages/bannerHeight/bannerHeight"></i-cell>
   <i-cell title="手势解锁" is-link url="/pages/handPassword/handPassword"></i-cell>
+  <i-cell title="搜索栏" is-link url="/pages/search/search"></i-cell>
+  <i-cell title="转盘" is-link url="/pages/zhuangpan/zhuangpan"></i-cell>
+  <i-cell title="时间线" is-link url="/pages/Timeline/Timeline"></i-cell>
 </i-cell-group>

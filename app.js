@@ -20,6 +20,8 @@ App({
   globalData: {
     userInfo: null,
     PhoneHeight: '',
-    PhoneWidth: ''
+    PhoneWidth: '',
+    token: wx.getStorageSync("__UserInfo").openid == undefined ? '' : wx.getStorageSync("__UserInfo").openid,
+    url:'https://app.zhiwuxuanlv.com'    //请求路径
   }
 })

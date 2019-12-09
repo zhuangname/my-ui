@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "sope":"/component/sope/sope",
+    "userinfo": "/component/userinfo/userinfo"
+  }
+}

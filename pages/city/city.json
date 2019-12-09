@@ -6,6 +6,6 @@
     "i-toast": "../../dist/toast/index"
   },
   "navigationBarTitleText": "城市选择器",
-  "navigationBarBackgroundColor": "white",
+  "navigationBarBackgroundColor": "#fff",
   "navigationBarTextStyle": "black"
 }

@@ -1,6 +1,6 @@
 
 
-<scroll-view scroll-y="true" style="height:800rpx">
+<!-- <scroll-view scroll-y="true" style="height:800rpx"> -->
   <view class="i-index-demo">
       <i-index height="100%" bind:change="onChange">
           <i-index-item 
@@ -21,6 +21,6 @@
           </i-index-item>
       </i-index>
   </view>
-</scroll-view>
+<!-- </scroll-view> -->
 
 <i-toast id="toast" />

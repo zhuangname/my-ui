@@ -1,0 +1,50 @@
+.upload-box{
+  position: fixed;
+  top: -100%;
+  width: 90%;
+  left: 50%;
+  margin-left: -357.5rpx;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  padding: 10rpx 0;
+  transition: all .2s;
+  background: #fff;
+}
+
+.upload-box .uplaod-img{
+  width: 70rpx;
+  height: 70rpx;
+  margin-right: 20rpx;
+}
+
+.upload-box .ProgressBar-box{
+  width: 84%;
+  border-radius: 20rpx;
+  overflow: hidden;
+  height: 34rpx;
+  position: relative;
+}
+
+.upload-box .ProgressBar-box .ProgressBar{
+  border: 1rpx solid #12EB1F;
+  background: #12EB1F;
+  width: 100%;
+  height: 100%;
+  transition: all .5s;
+}
+
+.upload-box .ProgressBar-box .Percentage{
+  position: absolute;
+  font-size: 20rpx;
+  color: #333;
+  left: 50%;
+  top: 50%;
+  margin-top: -15rpx;
+  margin-left: -29rpx;
+}
+
+.addbtn{
+  width: 100rpx;
+  height: 100rpx;
+}

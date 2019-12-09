@@ -1,0 +1,12 @@
+<view class="mask"></view>
+
+<view class="canvas-big-box">
+  <view class="canvas-box">
+    <image src="/images/close2.png" class="close2"></image>
+    <image wx:if="{{haibaoimg}}" src="{{haibaoimg}}" class="haibaoimg"></image>
+    <canvas wx:else style="width:100%; height:100%; background: #fff;" canvas-id="canvas" disable-scroll="true"></canvas>
+  </view>
+  <view class="save-btn" bindtap="save_btn">保存图片</view>
+</view>
+
+<sope scopeWritePhotosAlbum="{{scopeWritePhotosAlbum}}" bind:configqx="configqxClick"></sope>

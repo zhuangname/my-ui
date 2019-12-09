@@ -1,0 +1,27 @@
+<view class="mask {{maskActive}}" catchtouchmove="stopPageScroll" >
+
+  <view class="mask-box" style="{{toggle}}">
+
+    <view class="mask-01">
+    
+      <view class="wechat">微信授权</view>
+
+      <view>获取用户权限</view>
+
+      <view>● 获取你的公开信息（昵称、头像、地区及性别）</view>
+
+      <image src="/images/sope.png" class="sope" mode="widthFix"></image>
+
+    </view>
+
+    <view class="mask-btn-box">
+    
+      <view catchtap="configqx" data-userinfosope="{{!userinfosope}}">取消</view>
+
+      <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo" catchtap="configqx" class="settingClass">同意授权</button>
+    
+    </view>
+
+  </view>
+
+</view>

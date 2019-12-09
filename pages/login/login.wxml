@@ -1,0 +1,1 @@
+<button bindgetuserinfo="getUserInfo" lang="zh_CN" open-type="getUserInfo">一键授权</button>

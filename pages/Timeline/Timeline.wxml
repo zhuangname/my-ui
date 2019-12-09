@@ -1,0 +1,27 @@
+<view class="wuliuboxaa">
+
+  <view class="border"></view>
+
+  <block wx:for="{{3}}">
+
+    <view class="info-tim-asd" style="{{index == 0?'margin:0 0 30rpx;':index == 3?'margin:30rpx 0 0;':''}}">
+
+      <view class="time" style="{{index == 0?'padding:0 20rpx 20rpx;':index == 3?'padding:20rpx 20rpx 0;':''}}">
+      
+        <image src="/images/hd.png" class="hd"></image>
+
+        <text>2018-09-03 14:20:20</text>
+      
+      </view>
+
+      <view class="info-box">
+
+        <view class="info">玩哈桑的坏点好爱哦好的ioa好滴哦还是掉黑色地哦啊活动阿斯顿</view>
+      
+      </view>
+
+    </view>
+
+  </block>
+
+</view>

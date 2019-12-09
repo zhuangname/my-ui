@@ -1,0 +1,53 @@
+<view wx:if="{{haha}}">
+  <view class='search-box'>
+    <view style='width:80%; position: relative; margin:auto;'>
+      <image src="/images/search.png" class='search-img'></image>
+      <input type='text' placeholder='请输入商品名称' class='search-input' value='{{value}}' bindinput='searchInputChange' bindfocus='searchInputfocus'></input>
+      <image src="/images/close.png" class='search-close' wx:if="{{searchClose}}" bindtap='clearinput'></image>
+    </view>
+    <view style='font-size:32rpx; color:#6A6A6A; margin-right:40rpx;' bindtap='searchfunc'>搜索</view>
+  </view>
+  <view style='height:20rpx;'></view>
+
+  <view style='margin-top:30rpx;' wx:if="{{clearbox}}">
+    <view class='clearbox'>
+      <text>历史搜索</text>
+      <text bindtap='clearlistfunc'>清空历史记录</text>
+    </view>
+
+    <view class='guanjianci'>
+      <block wx:for="{{guanjianciarr}}" wx:key="key">
+        <text bindtap='guanjiancifunc' data-item="{{item}}">{{item}}</text>
+      </block>
+    </view>
+  </view>
+
+  <block wx:if="{{productbox}}" wx:for="{{productList}}">
+    <view class='product-box' data-goodsId="{{item.goodsId}}" bindtap='goproductDetailfunc'>
+      <view style='width:292rpx;'>
+        <image src="http://app.zhiwuxuanlv.com{{item.goodsImg}}" class='product-img'></image>
+      </view>
+      <view class='product-jsbox'>
+        <view class='product-name'>{{item.goodsName}}</view>
+        <view class='product-beife'>{{item.goodsBrief}}</view>
+        <!-- <text class='product-num'>已售14014 / 还剩971件</text> -->
+        <view class='price-box'>
+          <view>
+            <text class='t1'>￥{{item.experientialPrice}}</text>
+            <text class='t2'>￥{{item.goodsPrice}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+</block>
+  </view>
+
+<!-- 搜索没数据显示的版块 -->
+<view class='nosearchnearbyCommunity' wx:if="{{noProduct}}">  
+  <image src="/images/nosearchimg.png"></image>
+  <view style='color:#434343; margin-top:30rpx;'>未找到您想要的商品</view>
+  <view>请换个关键词试试呢~</view>
+</view>
+
+<network500 wx:if="{{network500}}" bindtap="connectfunc"></network500>    
+<!-- 网络故障的时候显示的版块 -->

@@ -1,0 +1,58 @@
+.canvas-big-box{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.canvas-box{
+  width: 560rpx;
+  height: 900rpx;
+  background: #fff;
+  z-index: 99;
+  border-radius: 8rpx;
+  position: relative;
+}
+
+.mask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -99;
+}
+
+.close2{
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  right: -25rpx;
+  top: -25rpx;
+  box-shadow: -1px 1px 4px #C2C2C2;
+  border-radius: 50%;
+}
+
+.save-btn{
+  background: linear-gradient(to right, #FD9E67 , #FF7468);
+  width: 560rpx;
+  padding: 14rpx 0;
+  text-align: center;
+  color: #fff;
+  border-radius: 8rpx;
+  margin: 40rpx 0 0;
+  font-size: 30rpx;
+}
+
+.haibaoimg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}

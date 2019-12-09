@@ -1,0 +1,57 @@
+<!-- <view class="upload-box" style="{{uploadBoxStyle}}">
+
+  <image src="{{uploadinfo.img}}" class="uplaod-img"></image>
+
+  <view class="ProgressBar-box">
+
+      <view class="ProgressBar" style="{{uploadinfo.progressBarBoxStyle}}"></view>
+
+      <view class="Percentage">{{uploadinfo.percentage}}</view>
+
+  </view>
+
+</view>
+
+<view>
+
+  <image src="/images/addbtn.png" class="addbtn" bindtap="upload"></image>
+
+</view> -->
+
+<view catchtap="saveImg">saveImg</view>
+
+<view catchtap="userinfosope">用户授权</view>
+
+<!-- <view class="mask" wx:if="{{scopeWritePhotosAlbum}}" catchtouchmove="{{stopPageScroll}}">
+
+  <view>
+
+    <view class="mask-01">
+    
+      <view class="wechat">微信授权</view>
+
+      <view>获取权限</view>
+
+      <view>● 保存图片或视频到你的相册</view>
+
+      <image src="/images/sope.png" class="sope" mode="widthFix"></image>
+
+    </view>
+
+    <view class="mask-btn-box">
+    
+      <view catchtap="configqx">取消</view>
+
+      <button open-type="openSetting" catchtap="openSetting" class="settingClass">去设置页</button>
+    
+    </view>
+
+  </view>
+
+</view> -->
+
+<!-- <view bindtap="textfun">text</view> -->
+
+<sope scopeWritePhotosAlbum="{{scopeWritePhotosAlbum}}" bind:configqx="configqxClick"></sope>
+
+<userinfo userinfosope="{{userinfosope}}" bind:configqx="configuserinfosopeqxClick" bind:userinfoData="userinfoDataClick"></userinfo>
